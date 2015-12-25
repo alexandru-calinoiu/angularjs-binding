@@ -4,10 +4,10 @@ angular.module('thinkAngular.viewControllers', ['ngRoute'])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/view_controllers', {
       templateUrl: 'view_controllers/view_controllers.html',
-      controller: 'ViewControllersCtrl as ctrl'
+      controller: 'ViewController as ctrl'
     })
   }])
-  .controller('ViewControllersCtrl', [function () {
+  .controller('ViewController', [function () {
     var self = this;
 
     self.message = 'Hello';

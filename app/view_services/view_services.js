@@ -16,12 +16,12 @@ angular.module('thinkAngular.viewServices', ['ngRoute'])
 
     return messages;
   })
-  .controller('ListCtrl', ['messages', function (messages) {
+  .controller('ListController', ['messages', function (messages) {
     var self = this;
 
     self.messages = messages.list;
   }])
-  .controller('PostCtrl', ['messages', function (messages) {
+  .controller('PostController', ['messages', function (messages) {
     var self = this;
 
     self.message = '';

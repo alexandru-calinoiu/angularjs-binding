@@ -1,9 +1,9 @@
 <h1>Services</h1>
 
-<div ng-controller="ListCtrl as listCtrl">
-  <p ng-repeat="message in listCtrl.messages">{{ message.id }}: {{ message.text }}</p>
+<div ng-controller="ListController as listCtrl">
+  <p ng-repeat="message in listCtrl.messages | orderBy:'text'">{{ message.id }}: {{ message.text }}</p>
 </div>
-<div ng-controller="PostCtrl as postCtrl">
+<div ng-controller="PostController as postCtrl">
   <form ng-submit="postCtrl.addMessage()">
     <input type="text" ng-model="postCtrl.message" autofocus>
     <button type="submit">Add message</button>
