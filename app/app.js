@@ -6,6 +6,7 @@ angular.module('thinkAngular', [
   'thinkAngular.viewBinding',
   'thinkAngular.viewControllers',
   'thinkAngular.viewServices',
+  'thinkAngular.viewPromises',
   'thinkAngular.version'
 ]).config(['$routeProvider', function ($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view_controllers'})
